@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trainingsplan Checkliste</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      padding: 0;
+      background-color: #f4f4f9;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .checklist {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .checklist-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    input[type="checkbox"] {
+      margin-right: 10px;
+      transform: scale(1.5);
+    }
+    label {
+      font-size: 18px;
+    }
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <h1>Trainingsplan Checkliste</h1>
+  <div class="checklist">
+    <h3>Montag: Oberkörper</h3>
+    <div class="checklist-item">
+      <input type="checkbox" id="montag-1">
+      <label for="montag-1">Liegestütze (3x12)</label>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" id="montag-2">
+      <label for="montag-2">Klimmzüge (3x so viel wie möglich)</label>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" id="montag-3">
+      <label for="montag-3">Schulterdrücken (3x10)</label>
+    </div>
+
+    <h3>Donnerstag: Unterkörper</h3>
+    <div class="checklist-item">
+      <input type="checkbox" id="donnerstag-1">
+      <label for="donnerstag-1">Kniebeugen (3x15)</label>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" id="donnerstag-2">
+      <label for="donnerstag-2">Ausfallschritte (3x10 pro Bein)</label>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" id="donnerstag-3">
+      <label for="donnerstag-3">Beinheben (3x15)</label>
+    </div>
+
+    <h3>Samstag: Ganzkörper & MMA</h3>
+    <div class="checklist-item">
+      <input type="checkbox" id="samstag-1">
+      <label for="samstag-1">Burpees (3x10)</label>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" id="samstag-2">
+      <label for="samstag-2">Schattenboxen (3x2 Minuten)</label>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" id="samstag-3">
+      <label for="samstag-3">Plank (3x30 Sekunden)</label>
+    </div>
+  </div>
+  <footer>
+    © 2024 Dein Trainingsplan
+  </footer>
+</body>
+</html>
