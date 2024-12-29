@@ -1,193 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trainingsplan Checkliste</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-      background-color: #f7f9fc;
-      color: #333;
-    }
-    h1, h2 {
-      text-align: center;
-    }
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    .section {
-      margin-bottom: 30px;
-    }
-    .checklist-item {
-      display: flex;
-      align-items: center;
-      margin-bottom: 15px;
-    }
-    input[type="checkbox"] {
-      margin-right: 10px;
-      transform: scale(1.5);
-    }
-    label {
-      font-size: 18px;
-    }
-    footer {
-      text-align: center;
-      margin-top: 30px;
-      font-size: 14px;
-      color: #555;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Trainingsplan: 90-Minuten-Einheiten</h1>
-  <div class="container">
-    <!-- Montag -->
-    <div class="section">
-      <h2>Montag: Oberkörper (Push/Pull)</h2>
-      <h3>Warm-Up (10 Minuten)</h3>
-      <div class="checklist-item">
-        <input type="checkbox" id="montag-warmup-1">
-        <label for="montag-warmup-1">Hampelmänner (3 Minuten)</label>
-      </div>
-      <div class="checklist-item">
-        <input type="checkbox" id="montag-warmup-2">
-        <label for="montag-warmup-2">Schulterkreisen und Mobilität (7 Minuten)</label>
+  <header>
+    <h1>Mein Trainingsplan</h1>
+    <p>Hier kannst du deine Übungen abhaken und deinen Fortschritt verfolgen.</p>
+  </header>
+
+  <main>
+    <!-- Trainingsplan Sektion -->
+    <section id="trainingsplan">
+      <h2>Trainingsplan</h2>
+
+      <div class="day">
+        <h3>Montag: Oberkörper</h3>
+        <ul class="checklist">
+          <li><input type="checkbox" id="montag1"> <label for="montag1">5 Minuten Schattenboxen</label></li>
+          <li><input type="checkbox" id="montag2"> <label for="montag2">5 Minuten Seilspringen</label></li>
+          <li><input type="checkbox" id="montag3"> <label for="montag3">Klimmzüge: 4 Sätze x 8-12 Wiederholungen</label></li>
+          <li><input type="checkbox" id="montag4"> <label for="montag4">Bankdrücken: 4 Sätze x 8-12 Wiederholungen</label></li>
+          <li><input type="checkbox" id="montag5"> <label for="montag5">Schulterdrücken: 3 Sätze x 10 Wiederholungen</label></li>
+          <li><input type="checkbox" id="montag6"> <label for="montag6">Rudern vorgebeugt: 4 Sätze x 10-12 Wiederholungen</label></li>
+          <li><input type="checkbox" id="montag7"> <label for="montag7">Liegestütze: 3 Sätze x 15-20 Wiederholungen</label></li>
+        </ul>
       </div>
 
-      <h3>Haupttraining (60 Minuten)</h3>
-      <div class="checklist-item">
-        <input type="checkbox" id="montag-main-1">
-        <label for="montag-main-1">Liegestütze (3x12–15)</label>
-      </div>
-      <div class="checklist-item">
-        <input type="checkbox" id="montag-main-2">
-        <label for="montag-main-2">Klimmzüge (3x so viele wie möglich)</label>
-      </div>
-      <div class="checklist-item">
-        <input type="checkbox" id="montag-main-3">
-        <label for="montag-main-3">Schulterdrücken (3x10)</label>
-      </div>
-      <div class="checklist-item">
-        <input type="checkbox" id="montag-main-4">
-        <label for="montag-main-4">Rudern (3x10 pro Seite)</label>
-      </div>
-      <div class="checklist-item">
-        <input type="checkbox" id="montag-main-5">
-        <label for="montag-main-5">Plank (3x30–45 Sekunden)</label>
+      <div class="day">
+        <h3>Donnerstag: Unterkörper</h3>
+        <ul class="checklist">
+          <li><input type="checkbox" id="donnerstag1"> <label for="donnerstag1">5 Minuten Schattenboxen</label></li>
+          <li><input type="checkbox" id="donnerstag2"> <label for="donnerstag2">5 Minuten Seilspringen</label></li>
+          <li><input type="checkbox" id="donnerstag3"> <label for="donnerstag3">Kniebeugen: 4 Sätze x 10 Wiederholungen</label></li>
+          <li><input type="checkbox" id="donnerstag4"> <label for="donnerstag4">Kreuzheben: 4 Sätze x 8 Wiederholungen</label></li>
+          <li><input type="checkbox" id="donnerstag5"> <label for="donnerstag5">Ausfallschritte: 3 Sätze x 10 Wiederholungen pro Bein</label></li>
+          <li><input type="checkbox" id="donnerstag6"> <label for="donnerstag6">Wadenheben: 3 Sätze x 15-20 Wiederholungen</label></li>
+          <li><input type="checkbox" id="donnerstag7"> <label for="donnerstag7">Russian Twists: 3 Sätze x 20 Drehungen</label></li>
+        </ul>
       </div>
 
-      <h3>Cool-Down (10 Minuten)</h3>
-      <div class="checklist-item">
-        <input type="checkbox" id="montag-cooldown-1">
-        <label for="montag-cooldown-1">Dehnen: Brust, Schultern, Rücken (5 Minuten)</label>
+      <div class="day">
+        <h3>Sonntag: Ganzkörper</h3>
+        <ul class="checklist">
+          <li><input type="checkbox" id="sonntag1"> <label for="sonntag1">5 Minuten Schattenboxen</label></li>
+          <li><input type="checkbox" id="sonntag2"> <label for="sonntag2">5 Minuten Seilspringen</label></li>
+          <li><input type="checkbox" id="sonntag3"> <label for="sonntag3">Kniebeugen mit Gewicht: 3 Sätze x 8-12 Wiederholungen</label></li>
+          <li><input type="checkbox" id="sonntag4"> <label for="sonntag4">Bankdrücken: 3 Sätze x 10 Wiederholungen</label></li>
+          <li><input type="checkbox" id="sonntag5"> <label for="sonntag5">Kreuzheben: 4 Sätze x 8 Wiederholungen</label></li>
+          <li><input type="checkbox" id="sonntag6"> <label for="sonntag6">Planks: 3 Sätze x 30-60 Sekunden</label></li>
+          <li><input type="checkbox" id="sonntag7"> <label for="sonntag7">Burpees: 3 Sätze x 10 Wiederholungen</label></li>
+        </ul>
       </div>
-      <div class="checklist-item">
-        <input type="checkbox" id="montag-cooldown-2">
-        <label for="montag-cooldown-2">Atemübungen (5 Minuten)</label>
-      </div>
-    </div>
+    </section>
+  </main>
 
-    <!-- Donnerstag -->
-    <div class="section">
-      <h2>Donnerstag: Unterkörper & Core</h2>
-      <h3>Warm-Up (10 Minuten)</h3>
-      <div class="checklist-item">
-        <input type="checkbox" id="donnerstag-warmup-1">
-        <label for="donnerstag-warmup-1">Kniehebelauf (3 Minuten)</label>
-      </div>
-      <div class="checklist-item">
-        <input type="checkbox" id="donnerstag-warmup-2">
-        <label for="donnerstag-warmup-2">Seitliche Ausfallschritte und Hüftmobilität (7 Minuten)</label>
-      </div>
-
-      <h3>Haupttraining (60 Minuten)</h3>
-      <div class="checklist-item">
-        <input type="checkbox" id="donnerstag-main-1">
-        <label for="donnerstag-main-1">Kniebeugen (3x15)</label>
-      </div>
-      <div class="checklist-item">
-        <input type="checkbox" id="donnerstag-main-2">
-        <label for="donnerstag-main-2">Ausfallschritte (3x10 pro Bein)</label>
-      </div>
-      <div class="checklist-item">
-        <input type="checkbox" id="donnerstag-main-3">
-        <label for="donnerstag-main-3">Wandsitzen (3x30 Sekunden)</label>
-      </div>
-      <div class="checklist-item">
-        <input type="checkbox" id="donnerstag-main-4">
-        <label for="donnerstag-main-4">Russian Twists (3x20)</label>
-      </div>
-      <div class="checklist-item">
-        <input type="checkbox" id="donnerstag-main-5">
-        <label for="donnerstag-main-5">Mountain Climbers (3x30 Sekunden)</label>
-      </div>
-
-      <h3>Cool-Down (10 Minuten)</h3>
-      <div class="checklist-item">
-        <input type="checkbox" id="donnerstag-cooldown-1">
-        <label for="donnerstag-cooldown-1">Dehnen: Beine, Hüfte, Rumpf (5 Minuten)</label>
-      </div>
-      <div class="checklist-item">
-        <input type="checkbox" id="donnerstag-cooldown-2">
-        <label for="donnerstag-cooldown-2">Atemübungen (5 Minuten)</label>
-      </div>
-    </div>
-
-    <!-- Samstag -->
-    <div class="section">
-      <h2>Samstag: Ganzkörper & MMA</h2>
-      <h3>Warm-Up (10 Minuten)</h3>
-      <div class="checklist-item">
-        <input type="checkbox" id="samstag-warmup-1">
-        <label for="samstag-warmup-1">Schattenboxen (3 Minuten)</label>
-      </div>
-      <div class="checklist-item">
-        <input type="checkbox" id="samstag-warmup-2">
-        <label for="samstag-warmup-2">Hüftmobilität und Armkreisen (7 Minuten)</label>
-      </div>
-
-      <h3>Haupttraining (60 Minuten)</h3>
-      <div class="checklist-item">
-        <input type="checkbox" id="samstag-main-1">
-        <label for="samstag-main-1">Burpees (3x10)</label>
-      </div>
-      <div class="checklist-item">
-        <input type="checkbox" id="samstag-main-2">
-        <label for="samstag-main-2">Kniebeugen-Sprünge (3x8)</label>
-      </div>
-      <div class="checklist-item">
-        <input type="checkbox" id="samstag-main-3">
-        <label for="samstag-main-3">Schattenboxen (3 Runden á 2 Minuten)</label>
-      </div>
-      <div class="checklist-item">
-        <input type="checkbox" id="samstag-main-4">
-        <label for="samstag-main-4">Plank mit Rotation (3x10 pro Seite)</label>
-      </div>
-      <div class="checklist-item">
-        <input type="checkbox" id="samstag-main-5">
-        <label for="samstag-main-5">Mountain Climbers (3x30 Sekunden)</label>
-      </div>
-
-      <h3>Cool-Down (10 Minuten)</h3>
-      <div class="checklist-item">
-        <input type="checkbox" id="samstag-cooldown-1">
-        <label for="samstag-cooldown-1">Dehnen: Beine, Rücken, Schultern (5 Minuten)</label>
-      </div>
-      <div class="checklist-item">
-        <input type="checkbox" id="samstag-cooldown-2">
-        <label for="samstag-cooldown-2">Atemübungen (5 Minuten)</label>
-      </div>
-    </div>
-  </div>
   <footer>
-    © 2024 Dein Trainingsplan – Entwickelt für Fortschritt!
+    <p>&copy; 2024 Mein Trainingsplan</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
